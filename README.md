@@ -4,8 +4,11 @@ Le projet Sibra est un programme qui permet à un utilisateur d'obtenir les chem
 
 # Features
 fonction fastest
+
 fonction foremost
+
 fonction shortest
+s
 affichage des trajets selon les lignes
 
 # Avec git, dans le repertoire de votre choix :
