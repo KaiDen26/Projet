@@ -44,13 +44,11 @@ if __name__ == '__main__':
     showStops()
 
     print('Choisissez un arrêt de départ : ')
-    x = input()
+    arret1 = input()
 
     print('Choisissez un arrêt d\'arrivée : ')
-    x2 = input()
+    arret2 = input()
 
-    shortest(getStopFromNumber(int(x)), getStopFromNumber(int(x2)))
-    fastest(getStopFromNumber(int(x)), getStopFromNumber(int(x2)), "19:50")
-    foremost(getStopFromNumber(int(x)), getStopFromNumber(int(x2)), "7:10")
-
-1
+    shortest(getStopFromNumber(int(arret1)), getStopFromNumber(int(arret2)), "8:10")
+    fastest(getStopFromNumber(int(arret1)), getStopFromNumber(int(arret2)), "8:10")
+    foremost(getStopFromNumber(int(arret1)), getStopFromNumber(int(arret2)), "8:10")

@@ -2,7 +2,7 @@
 """
 Created on Tue Mar 15 21:58:06 2022
 
-@author: 33642
+@author: Thomas NICOLAS
 """
 
 from datetime import datetime, timezone
@@ -123,8 +123,7 @@ class Ligne :
        
         if self.arret.nextStop(self) != None:
             
-            if other_ligne.arret != None:
-                 #print("arret1 : {} & arret2 : {}".format(self.arret.nom, other_ligne.arret.nom))   
+            if other_ligne.arret != None: 
                  
                  if other_ligne.arret == self.arret :
                      return self.arret
@@ -140,7 +139,7 @@ class Ligne :
           self.arret = self.depart
           return False
        
-   def getArretBetween(self, arret1, arret2):
+   def getArretBetween(self, arret1, arret2, time):
        
        compteur = 0
        start_cpt = False
@@ -232,8 +231,7 @@ def to_timestamp(date_str):
     if date_str == "-":
         return "-"
     date_obj = datetime.strptime(date_str, '%H:%M')
-    date_obj = date_obj.replace(tzinfo=timezone.utc)  # replace your desired TZ here
-    return date_obj.timestamp() 
+    date_obj = date_obj.replace(tzinfo=timezone.utc)
 
 def getCurrentTime():
     
