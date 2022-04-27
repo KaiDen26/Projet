@@ -10,7 +10,7 @@ affichage des trajets selon les lignes
 
 # Avec git, dans le repertoire de votre choix :
 
-git clone https://github.com/Tarhengal/Poly_Chess_PROJ531.git
+git clone https://github.com/KaiDen26/Projet.git
 
 # puis installer les modules nécessaires :
 
