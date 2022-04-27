@@ -19,7 +19,5 @@ pip install IPython
 # Utilisation
 Ouvrir le projet avec spyder, vs code ou un autre ide.
 
-# L'organisations du projet est la suivante :
-
 # Pour lancer le programme, éxécuter main.py.
 
