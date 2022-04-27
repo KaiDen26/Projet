@@ -287,25 +287,5 @@ def foremost(arret1, arret2, time=getCurrentTime()):
         print("\n---------------------------- Foremost Function -------------------------------\n")  
         afficherHoraire(ligne_result, arret1.nom, meilleure_horaire_depart, arret2.nom, meilleure_horaire_arrivee)
                     
-#arret_gare = dict_arret["Vernod"]
-#arret_pdg = dict_arret["PISCINE-PATINOIRE"]
 
-#print(arret_pdg.HoraireFromLigne(ligne2_CAMPUS))
-
-#ligne1.hasCommonLine(ligne2)
-
-#shortest(arret_gare, arret_pdg)
-#fastest(arret_gare, arret_pdg)
-#foremost(arret_gare, arret_pdg)
-
-
-#print(ligne1_Lycee.showTrajet())
-
-#print(ligne1.getArretBetween(arret_gare, arret_pdg))
-
-#print(dict_arret)
-
-
-
-#print(getClosestTime(arret_gare, ligne1))
 
