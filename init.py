@@ -2,7 +2,7 @@
 """
 Created on Wed Mar 16 20:08:47 2022
 
-@author: 33642
+@author: Thomas NICOLAS
 """
 
 from Sibra import *
@@ -164,8 +164,8 @@ def hasToChangeLine(arret1, arret2, function, time=getCurrentTime()):
         
         if function == "shortest":
             
-            nb1 = arret1_ligne.getArretBetween(arret1, commun)
-            nb2 = arret2_ligne.getArretBetween(commun, arret2)
+            nb1 = arret1_ligne.getArretBetween(arret1, commun, time)
+            nb2 = arret2_ligne.getArretBetween(commun, arret2, time)
 
             afficherNombreArret(arret1.nom, arret2.nom, nb1 + nb2)
 
@@ -182,7 +182,7 @@ def afficherNombreArret(arret1, arret2, nb):
 def afficherTempsTrajet(ligne, arret1, arret2, temps):
     print("{} : {} -> {} = {} minutes.".format(ligne, arret1, arret2, temps))
       
-def shortest(arret1, arret2):
+def shortest(arret1, arret2, time=getCurrentTime()):
     
     result = 100000
     ligne_result = ""
@@ -195,7 +195,7 @@ def shortest(arret1, arret2):
         
             nb_ligne += 1
             
-            nb = ligne.getArretBetween(arret1, arret2)
+            nb = ligne.getArretBetween(arret1, arret2, time)
            
             print(nb)
             
@@ -204,7 +204,7 @@ def shortest(arret1, arret2):
                 ligne_result = ligne.nom 
                 
     if nb_ligne == 0:
-        hasToChangeLine(arret1, arret2, "shortest")
+        hasToChangeLine(arret1, arret2, "shortest", time)
     else:                       
         afficherNombreArret(arret1.nom, arret2.nom, result)
 

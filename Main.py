@@ -49,6 +49,6 @@ if __name__ == '__main__':
     print('Choisissez un arrêt d\'arrivée : ')
     arret2 = input()
 
-    shortest(getStopFromNumber(int(arret1)), getStopFromNumber(int(arret2)))
+    shortest(getStopFromNumber(int(arret1)), getStopFromNumber(int(arret2)), "8:10")
     fastest(getStopFromNumber(int(arret1)), getStopFromNumber(int(arret2)), "8:10")
     foremost(getStopFromNumber(int(arret1)), getStopFromNumber(int(arret2)), "8:10")
