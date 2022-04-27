@@ -29,8 +29,7 @@ class Arret :
         
         if ligne in self.infos:
             return True
-        return False
-        
+        return False     
     
     def HoraireFromLigne(self, ligne):
         if ligne in self.infos:
